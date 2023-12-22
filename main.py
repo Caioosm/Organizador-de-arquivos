@@ -1,0 +1,29 @@
+import os
+from tkinter.filedialog import askdirectory
+
+diretorio = askdirectory(title="Selecione uma pasta")
+
+lista_arquivos = os.listdir(diretorio)
+
+#pastas e extensões dos arquivos especifícos para cada pasta
+locais = {
+    "Imagens": [".png", ".jpg", ".jpeg", ".svg"],
+    "pdfs": [".pdf"],
+    "Slides": [".pptx", ".odp", ".potx"],
+    "Winrar": [".zip", ".rar"],
+    "word": [".docx", ".doc", ".txt"],
+    "executaveis": [".exe", ".msi"],
+    "Torrets": [".torrent"],
+    "Planilhas": [".xlsx", ".xls"],
+    "Programacao": [".html", ".css"]
+}
+
+for arquivo in lista_arquivos:
+    #01. arquivo.pdf
+    nome, extensao = os.path.splitext(f"{diretorio}/{arquivo}")
+
+    for pasta in locais:
+        if extensao in locais[pasta]:
+            if not os.path.exists(f"{diretorio}/{pasta}"):
+                os.mkdir(f"{diretorio}/{pasta}")
+            os.rename(f"{diretorio}/{arquivo}", f"{diretorio}/{pasta}/{arquivo}")
