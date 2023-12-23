@@ -13,7 +13,7 @@ locais = {
     "Winrar": [".zip", ".rar"],
     "word": [".docx", ".doc", ".txt"],
     "executaveis": [".exe", ".msi"],
-    "Torrets": [".torrent"],
+    "Torrents": [".torrent"],
     "Planilhas": [".xlsx", ".xls"],
     "Programacao": [".html", ".css"]
 }
