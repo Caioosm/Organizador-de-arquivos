@@ -7,15 +7,15 @@ lista_arquivos = os.listdir(diretorio)
 
 #pastas e extensões dos arquivos especifícos para cada pasta
 locais = {
-    "Imagens": [".png", ".jpg", ".jpeg", ".svg", ".webp"],
+    "Imagens": [".png", ".jpg", ".jpeg", ".svg", ".webp", '.jfif', '.mp4'],
     "pdfs": [".pdf"],
     "Slides": [".pptx", ".odp", ".potx"],
     "Winrar": [".zip", ".rar"],
     "word": [".docx", ".doc", ".txt"],
     "executaveis": [".exe", ".msi"],
     "Torrents": [".torrent"],
-    "Planilhas": [".xlsx", ".xls"],
-    "Programacao": [".html", ".css"]
+    "Planilhas": [".xlsx", ".xls", ".csv"],
+    "Programacao": [".html", ".css", '.md', '.py', '.ipynb']
 }
 
 for arquivo in lista_arquivos:
