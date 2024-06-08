@@ -16,7 +16,8 @@ locais = {
     "Torrents": [".torrent"],
     "Planilhas": [".xlsx", ".xls", ".csv"],
     "Programacao": [".html", ".css", '.md', '.py', '.ipynb', '.asta'],
-    "Aleatorios": [".jar"]
+    "Aleatorios": [".jar"],
+    "Audios": [".mp3", ".WEBM"]
 }
 
 for arquivo in lista_arquivos:
