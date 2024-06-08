@@ -29,3 +29,4 @@ for arquivo in lista_arquivos:
             if not os.path.exists(f"{diretorio}/{pasta}"):
                 os.mkdir(f"{diretorio}/{pasta}")
             os.rename(f"{diretorio}/{arquivo}", f"{diretorio}/{pasta}/{arquivo}")
+            
