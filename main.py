@@ -15,7 +15,7 @@ locais = {
     "executaveis": [".exe", ".msi"],
     "Torrents": [".torrent"],
     "Planilhas": [".xlsx", ".xls", ".csv"],
-    "Programacao": [".html", ".css", '.md', '.py', '.ipynb', '.asta'],
+    "Programacao": [".html", ".css", '.md', '.py', '.ipynb', '.asta', '.jar'],
     "Aleatorios": [".jar"],
     "Audios": [".mp3", ".WEBM"]
 }
